@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MottoSHN Rider Hub</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>MottoSHN Rider Hub</h1>
+      <p>Reserve your Rider Number (1–88). First come, first served.</p>
+
+      <section class="card">
+        <h2>Countdown to lock-in</h2>
+        <p id="countdown">Loading countdown...</p>
+      </section>
+
+      <section class="card">
+        <h2>Choose your number</h2>
+        <div id="slots" class="slots"></div>
+      </section>
+
+      <section class="card">
+        <h2>Your details</h2>
+        <form id="reservation-form">
+          <label>Rider Number
+            <input type="number" id="riderNumber" min="1" max="88" required />
+          </label>
+          <label>Name
+            <input type="text" id="riderName" required />
+          </label>
+          <label>Phone (WhatsApp)
+            <input type="text" id="phone" required />
+          </label>
+          <label>Telegram Handle (optional)
+            <input type="text" id="telegramHandle" />
+          </label>
+          <button type="submit">Reserve now</button>
+        </form>
+        <p id="result"></p>
+      </section>
+
+      <section class="card">
+        <h2>PayNow instructions</h2>
+        <p>UEN: <strong id="paynowUen">-</strong></p>
+        <p>Reference format: <strong id="paynowPrefix">-</strong>-&lt;your_number&gt;</p>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
