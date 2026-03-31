@@ -1,0 +1,12 @@
+{
+  "name": "mottoshn-riderhub-bot",
+  "version": "0.1.0",
+  "description": "MottoSHN Rider Hub MVP",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  }
+}
